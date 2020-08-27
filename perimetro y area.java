@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class HolaMundo {
+    public static void main (String Args[]){
+        //Recoleccion de Datos
+        System.out.println("Escriba el Alto");
+        Scanner alto = new Scanner(System.in);
+        int altoConsola = Integer.parseInt(alto.nextLine());
+        
+        System.out.println("Escriba el Ancho");
+        Scanner ancho = new Scanner(System.in);
+        int anchoConsola = Integer.parseInt(ancho.nextLine());
+        //Calculo
+        int perimetro  = (altoConsola + anchoConsola) * 2;
+        System.out.println("perimetro = " + perimetro);
+        int area = altoConsola * anchoConsola;
+        System.out.println("area = " + area);
+         
+    }
+}
