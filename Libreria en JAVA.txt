@@ -1,0 +1,34 @@
+
+import java.util.Scanner;
+
+public class HolaMundo {
+
+    public static void main(String args[]) {
+        //Nombre
+        System.out.println("Ingrese su nombre por favor");
+        Scanner nombre = new Scanner(System.in);
+        String consolaNombre = nombre.nextLine();
+        //Id
+        System.out.println("Ingrese el ID");
+        Scanner id = new Scanner(System.in);
+        int consolaId = Integer.parseInt(id.nextLine());
+        //Precio
+        System.out.println("Ingrese el precio");
+        Scanner precio = new Scanner(System.in);
+        double consolaPrecio = Double.parseDouble(precio.nextLine());
+        //Simbolo
+        System.out.println("Ingrese el simbolo de dolar");
+        Scanner simbolo = new Scanner(System.in);
+        char consolaSimbolo = simbolo.nextLine().charAt(0);
+        //Envio Gratuito
+        System.out.println("Desea el envio gratuito");
+        Scanner envio = new Scanner(System.in);
+        boolean consolaEnvio = Boolean.parseBoolean(envio.nextLine());
+
+        //INFORMACION A EMPRIMIR
+        System.out.println("Nombre: " + consolaNombre + " #" + consolaId);
+        System.out.println("Precio: " + consolaSimbolo + consolaPrecio);
+        System.out.println("Envio Gratuito: " + consolaEnvio);
+
+    }
+}
