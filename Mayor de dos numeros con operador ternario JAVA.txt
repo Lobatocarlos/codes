@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class HolaMundo {
+
+    public static void main(String args[]) {
+        //Obtencion de datos
+        System.out.println("Ingrese un numero: ");
+        Scanner primerNumero = new Scanner(System.in);
+        int numeroConsola = Integer.parseInt(primerNumero.nextLine());
+
+        System.out.println("Ingrese otro numero: ");
+        Scanner segundoNumero = new Scanner(System.in);
+        int numeroConsola2 = Integer.parseInt(segundoNumero.nextLine());
+        //proceso
+        var resultado = (numeroConsola > numeroConsola2) ? numeroConsola : numeroConsola2;
+        //Resultado
+        System.out.println("El numero mayor es: " + resultado);
+    }
+}
