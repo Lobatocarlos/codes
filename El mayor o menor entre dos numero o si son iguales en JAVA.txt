@@ -1,0 +1,21 @@
+
+import java.util.Scanner;
+
+public class Ejercicios {
+
+    public static void main(String[] Args) {
+    Scanner numero = new Scanner(System.in);
+    System.out.println("Ingrese un numero");
+    int numero1 = numero.nextInt();
+    System.out.println("Ingrese el segundo numero");
+    int numero2 = numero.nextInt();
+    if (numero1 == numero2){
+        System.out.println("Los dos numero son iguales");
+    }
+    else if (numero1 > numero2){
+        System.out.println("El numero mayor es:" + numero1);
+    }else
+    System.out.println("El numero mayor es:" + numero2);
+    }
+    
+}
