@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class HolaMundo {
+
+    public static void main(String args[]) {
+
+        var estacion = "Estacion desconocidad";
+        System.out.println("Ingrese el numero del mes del año que desea saber la estacion");
+        Scanner mes = new Scanner(System.in);
+        int mesConsola = Integer.parseInt(mes.next());
+
+        if (mesConsola == 1 || mesConsola == 2 || mesConsola == 12) {
+            estacion = "invierno";
+        } else if (mesConsola == 3 || mesConsola == 4 || mesConsola == 5) {
+            estacion = "primavera";
+        } else if (mesConsola == 6 || mesConsola == 7 || mesConsola == 8) {
+            estacion = "verano";
+        }
+        if (mesConsola == 9 || mesConsola == 10 || mesConsola == 11) {
+            estacion = "otoño";
+        }
+
+        System.out.println(estacion);
+    }
+}
