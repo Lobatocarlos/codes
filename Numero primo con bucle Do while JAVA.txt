@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Ejercicios {
+
+    public static void main(String[] Args) {
+
+        int opcion;
+        do {
+            Scanner numeroPedir = new Scanner(System.in);
+            System.out.println("Ingrese un numero");
+            int numero = numeroPedir.nextInt();
+            if (numero % (numero + 1) == 1) {
+                System.out.println("El numero  no es primo");
+            } else {
+                System.out.println("el numero  es  primo");
+            }
+            System.out.println("¿Desea provar otra ves? 1.si cualquier otro numero No");
+            opcion = numeroPedir.nextInt();
+            if (opcion != 1) {
+                break;
+            }
+        } while (opcion == 1);
+    }
+}
