@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class HolaMundo {
+
+    public static void main(String Args[]) {
+
+        System.out.println("Ingrese un numero del 0 al 10");
+        Scanner nota = new Scanner(System.in);
+        var notaConsola = Integer.parseInt(nota.nextLine());
+
+        if (notaConsola == 0 && notaConsola < 6) {
+            System.out.println("Su nota es: F");
+        } else if (notaConsola == 6 && notaConsola < 7) {
+            System.out.println("Su nota es: D");
+        } else if (notaConsola == 7 && notaConsola < 8) {
+            System.out.println("Su nota es: C");
+        } else if (notaConsola == 8 && notaConsola < 9) {
+            System.out.println("Su nota es: B");
+        } else if (notaConsola == 9 && notaConsola <= 10) {
+            System.out.println("Su nota es: A");
+        } else {
+            System.out.println("Valor Desconocido");
+        }
+    }
+}
