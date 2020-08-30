@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Ejercicios {
+
+    public static void main(String[] Args) {
+        Scanner numero = new Scanner(System.in);
+        System.out.println("Ingrese un numero");
+        int numeroConsola = numero.nextInt();
+        String resultado;
+        String parImpar = "valor";
+        if (numeroConsola > 0) {
+            resultado = "Numero es positivo";
+            if (numeroConsola % 2 == 0) {
+                parImpar = "Numero es par";
+            } 
+            else if(numeroConsola % 2 != 0)
+            {
+                parImpar = "Numero es impar";
+            }
+        } 
+        else 
+        {
+            resultado = "Numero es negativo";
+        }
+
+        System.out.println(resultado);
+        System.out.println(parImpar);
+    }
+}
