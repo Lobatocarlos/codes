@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Ejercicios {
+
+    public static void main(String[] Args) {
+        Scanner numero = new Scanner(System.in);
+        System.out.println("Ingrese un numero");
+        int numeroConsola = numero.nextInt();
+        int resultado = 0;
+        int resultadoImpares = 0;
+
+        for (int i = 1; i <= numeroConsola; i++) {
+            if (i % 2 == 0) {
+                resultado += i;
+
+            } else if (i % 2 != 0) {
+                resultadoImpares += i;
+
+            }
+
+        }
+        System.out.println("resultado pares = " + resultado);
+        System.out.println("resultado impares pares = " + resultadoImpares);
+
+    }
+}
