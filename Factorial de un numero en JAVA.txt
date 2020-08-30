@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Ejercicios {
+
+    public static void main(String[] Args) {
+        //Variables
+        Scanner numero = new Scanner(System.in);
+        System.out.println("Ingrese el Numero que desea saber el factorial");
+        int numeroConsola = Integer.parseInt(numero.nextLine());
+        int factorial = numeroConsola * (numeroConsola - 1); //inicializamos a si para tener el numero inicial
+        //valoramos los dos primeros numero que el factorial es el mismo
+
+        if (numeroConsola == 0 || numeroConsola == 1) {
+            System.out.println("El factorial de: " + numeroConsola + "1");
+        } else {
+            //se le restan dos al numero que se desea saber por el primer proceso de arriba y el empezamos multiplicando por 1
+            for (int iteracion = 1; iteracion <= numeroConsola - 2; iteracion++) {
+                factorial = factorial * iteracion;
+                //activar solo si se desea ver el calculo
+                //System.out.println("factorial = " + factorial);
+            }
+            System.out.println("El factorial de: " + numeroConsola + "es: " + factorial);
+        }
+
+    }
+}
