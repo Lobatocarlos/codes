@@ -1,0 +1,31 @@
+package Universidad;
+
+import javax.swing.JOptionPane;
+
+public class Prueba {
+
+    public static void main(String[] Args) {
+        int numeroPedir = Integer.parseInt(JOptionPane.showInputDialog("Escriba un numero para saber su serie fibonacii inversa"));
+        int numero1 = 0, numero2 = 1, fibonacci = 0;
+        int invertido1 = 0 ,invertido2 = 0, fibonacciInvertido = 0;
+        for (int i = 0 ; numero1 < numeroPedir ; i++){
+          System.out.println("numero1 " + numero1);
+          if (fibonacci >= numeroPedir){
+              break;
+          }else 
+          fibonacci = numero1 + numero2;
+          numero1 = numero2;
+          numero2 = fibonacci;
+        }
+        
+         System.out.println("------------------Invertido----------------------");
+        invertido1 = numero2; //34
+        invertido2 = numero1;// 21
+        for(int i = 0; invertido1 > 0;i++){
+            System.out.println("invertido1 = " + invertido2);
+            fibonacciInvertido = invertido1 - invertido2; //34 21
+            invertido1 = invertido2; //21
+            invertido2 = fibonacciInvertido;//13
+        }  
+    }
+}
