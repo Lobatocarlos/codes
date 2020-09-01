@@ -1,0 +1,23 @@
+package Universidad;
+
+import javax.swing.JOptionPane;
+
+public class Prueba {
+
+    public static void main(String[] Args) {
+        //encontrar el mayor de 3 numeros
+
+        int numero1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero"));
+        int numero2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero"));
+        int numero3 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero"));
+
+        if (numero1 > numero2 && numero1 > numero3) {
+            System.out.println("numero 1 es mayor: " + numero1);
+        } else if (numero2 > numero3) {
+            System.out.println("numero 2 es mayor: " + numero2);
+        } else {
+            System.out.println("numero 3 es mayor: " + numero3);
+        }
+    }
+
+}
