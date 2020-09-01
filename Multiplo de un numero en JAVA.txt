@@ -1,0 +1,16 @@
+package Universidad;
+
+import javax.swing.JOptionPane;
+
+public class Prueba {
+
+    public static void main(String[] Args) {
+        // para saber si es multiplo solo se tiene que devidir el numero con el numero que deseamos saber si tiene multiplo 
+
+        //2. Programa que lea un número entero y muestre si el número es múltiplo de 10.
+        int numero = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero"));
+        int numero2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero que desee saber si es multiplo"));
+        String multiplo = (numero % numero2 == 0) ? "Es multiplo" : "No es multiplo";
+        System.out.println("multiplo = " + multiplo);
+    }
+}
