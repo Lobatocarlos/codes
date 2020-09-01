@@ -1,0 +1,21 @@
+package Universidad;
+
+import javax.swing.JOptionPane;
+
+public class Prueba {
+
+    public static void main(String[] Args) {
+        int h = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la hora"));
+        int m = Integer.parseInt(JOptionPane.showInputDialog("ingrese los minutos"));
+        int s = Integer.parseInt(JOptionPane.showInputDialog("Ingrese los segundos"));
+
+        if ((h > 0 && h <= 24) && (m > 0 && m <= 60) && (s > 0 && s < 60)) {
+            System.out.println("Hora Establecidad correcta");
+            System.out.println("La hora es:" + h + " horas " + m + " minutos " + s + " segundos");
+        } else {
+            System.out.println("Hora establecida Incorrecta");
+
+        }
+
+    }
+}
