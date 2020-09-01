@@ -1,0 +1,20 @@
+package Universidad;
+
+import javax.swing.JOptionPane;
+
+public class Prueba {
+
+    public static void main(String[] Args) {
+       
+       int numero = Integer.parseInt(JOptionPane.showInputDialog("ingrese un numero"));
+       int conversion = 0;
+       
+       
+       for (int i = 1; numero > 0; i++){
+          conversion = numero % 2;
+          numero /=2;
+           
+           System.out.println("conversion = " + conversion);
+       }
+    }
+}
